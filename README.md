@@ -73,7 +73,7 @@ precision.
 
 <h3>Steps for Rk-4 method</h3>
 <p font="italic">   
-    1. Start
+    FirstStart
 
 2. Define function f(x,y)
 
@@ -98,6 +98,7 @@ While i &lt; n
 
 7. yn will be the result
 
-8. Stop
+8. Stopk2k2​.
+
 </p>
 
