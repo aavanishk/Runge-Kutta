@@ -73,11 +73,31 @@ precision.
 
 <h3>Steps for Rk-4 method</h3>
 <p>   
-        First stage (compute k1k1​):
-        Calculate k1k1​ by evaluating the derivative function f(tn,yn)f(tn​,yn​) at the current time and state.
-    Second stage (compute k2k2​ and update yn+1yn+1​):
-        Use k1k1​ to estimate the state at the midpoint of the interval.
-        Calculate k2k2​ by evaluating the derivative function f(tn+h2,yn+k12)f(tn​+2h​,yn​+2k1​​) at the midpoint.
-        Update yn+1yn+1​ based on the weighted average of k2k2​..
+1. Start
+
+2. Define function f(x,y)
+
+3. Read values of initial condition(x0 and y0),
+Number of steps (n) and calculation point (xn)
+4. Calculate step size as h
+(h) = (xn - x0)/n
+
+5. initialize a variable be i as 0
+
+6. Loop
+k1 = h * f(x0, y0)
+k2 = h * f(x0+h/2, y0+k1/2)
+k3 = h * f(x0+h/2, y0+k2/2)
+k4 = h * f(x0+h, y0+k3)
+k = (k1+2*k2+2*k3+k4)/6
+yn = y0 + k
+i = i + 1
+x0 = x0 + h
+y0 = yn
+While i &lt; n
+
+7. yn will be the result
+
+8. Stop
 </p>
 
