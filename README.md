@@ -1,7 +1,18 @@
 # Discription of Runge Kutta method and it's implementation
 <h1>INTRODUCTION</h1>
-<p>The Runge-Kutta method is a numerical technique used for solving ordinary differential equations (ODEs) or systems of ODEs. It is a family of iterative methods that provides a way to approximate the solution of differential equations when an analytical solution is difficult or impossible to find.</p>
+<p>To work with mathematical problems that either don&#39;t have analytical answers or are too complicated
+to be solved through normal methods, numerical methods are essential. These methods involve
+approximating solutions and providing numerical responses to mathematical models through the use of
+computing algorithms. Numerical methods are essential in scientific and technical contexts for solving a
+variety of issues, such as those requiring differential equations, optimization, and simulations in a easy
+way than the normal traditional methods. One of such methods to solve Ordinary Differential Equations
+is RK-4 method also known as Runge Kutta 4 th order method.
+There are two of such methods:
+● Runge Kutta Second Order
+● Runge Kutta Forth Order</p>
+
 <h2>Runge Kutta second method</h2>
+
 <p>The second-order Runge-Kutta method (RK2), also known as the midpoint method, is a numerical technique for solving ordinary differential equations (ODEs). The RK2 method is simpler than the RK4 method but still provides a reasonable level of accuracy. It uses two evaluations of the derivative function to estimate the solution at the next time step.
 
 For a first-order ordinary differential equation of the form:
@@ -16,7 +27,7 @@ yn+1=yn+k2yn+1​=yn​+k2​
 
 Here, hh is the step size, tntn​ and ynyn​ represent the current time and the current value of the dependent variable, and yn+1yn+1​ is the estimate of the dependent variable at the next time step.
 
-The RK2 method involves two stages:
+<h3>The RK2 method involves two stages:</h3>
 
     First stage (compute k1k1​):
         Calculate k1k1​ by evaluating the derivative function f(tn,yn)f(tn​,yn​) at the current time and state.
