@@ -1,7 +1,7 @@
 # Discription of Runge Kutta method and it's implementation
 <h1>INTRODUCTION</h1>
 <p>The Runge-Kutta method is a numerical technique used for solving ordinary differential equations (ODEs) or systems of ODEs. It is a family of iterative methods that provides a way to approximate the solution of differential equations when an analytical solution is difficult or impossible to find.</p>
-<h2>Runge Kutta</h2>
+<h2>Runge Kutta second method</h2>
 <p>The second-order Runge-Kutta method (RK2), also known as the midpoint method, is a numerical technique for solving ordinary differential equations (ODEs). The RK2 method is simpler than the RK4 method but still provides a reasonable level of accuracy. It uses two evaluations of the derivative function to estimate the solution at the next time step.
 
 For a first-order ordinary differential equation of the form:
