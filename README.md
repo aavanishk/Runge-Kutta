@@ -11,7 +11,25 @@ There are two of such methods:
 ● Runge Kutta Second Order
 ● Runge Kutta Forth Order</p>
 
-<h2>Runge Kutta second method</h2>
+<h2>Theoretical Backgrond</h2>
+<p>The approximation of the solution over the specified range is made possible by an iterative process that
+splits the solution interval into discrete stages. The basic principle includes:
+
+<h3> Iterative procedure</h3>
+Here, the ODE is broken to smaller steps and solved.
+<h3>Slope calculation</h3> 
+Using the derivative of the ODE, the approach determines the slopes of the solution at various
+locations inside each step.
+<h3>Weighted Average</h3>
+Using the derivative of the ODE, the approach determines the slopes of the solution at various
+locations inside each step.
+<h3>Midpoint Estimation</h3>
+The intervals are calculated at the beginning of the process.
+<h3>Refinement of slopes</h3>
+The slopes are further calculated at the midpoints.
+<h3>Final solution update</h3>
+The final solution is calculated by combining the refined steps for more accuracy at end of steps.</p>
+<h2>Runge Kutta-2 Overview</h2>
 
 <p>The second-order Runge-Kutta method (RK2), also known as the midpoint method, is a numerical technique for solving ordinary differential equations (ODEs). The RK2 method is simpler than the RK4 method but still provides a reasonable level of accuracy. It uses two evaluations of the derivative function to estimate the solution at the next time step.
 
@@ -37,3 +55,18 @@ Here, hh is the step size, tntn​ and ynyn​ represent the current time and th
         Update yn+1yn+1​ based on the weighted average of k2k2​.
 
 The RK2 method strikes a balance between simplicity and accuracy and is often used when a moderate level of accuracy is sufficient, and computational efficiency is crucial.</p>
+
+<h2>Runge Kutta-4 Overview</h2>
+
+<p>
+One well-known numerical method for solving ordinary differential equations (ODEs) is the fourth-order
+Runge-Kutta (RK-4) method. Each iteration of RK-4, which is well-known for its accuracy and efficiency,
+follows a four-step procedure.
+It starts with a slope evaluation at the starting point, using these slopes to estimate the behavior of the
+solution over a short time interval. The solution estimate is then improved by the method&#39;s computation
+of a midpoint prediction and subsequent recalculation of slopes at this midpoint. These improved slopes
+are used to calculate the final solution update.
+RK-4 is a highly favored option in scientific simulations, engineering analysis, and other applications
+where accurate approximations of ODE solutions are essential due to its noteworthy fourth-order
+precision.
+</p>
