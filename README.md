@@ -73,7 +73,7 @@ precision.
 
 <h3>Steps for Rk-4 method</h3>
 <p>   
-1. Start
+    1. Start
 
 2. Define function f(x,y)
 
