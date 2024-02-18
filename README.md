@@ -73,7 +73,7 @@ precision.
 
 <h3>Steps for Rk-4 method</h3>
 <p>   
-    Initialize t0=tinitialt0​=tinitial​ and y0=yinitialy0​=yinitial​.
+        Initialize t0=tinitialt0​=tinitial​ and y0=yinitialy0​=yinitial​.
     For i=1i=1 to nn:
     a. Calculate k1=h⋅f(ti−1,yi−1)k1​=h⋅f(ti−1​,yi−1​).
     b. Calculate k2=h⋅f(ti−1+h2,yi−1+k12)k2​=h⋅f(ti−1​+2h​,yi−1​+2k1​​).
@@ -81,5 +81,6 @@ precision.
     d. Calculate k4=h⋅f(ti−1+h,yi−1+k3)k4​=h⋅f(ti−1​+h,yi−1​+k3​).
     e. Update yi=yi−1+16(k1+2k2+2k3+k4)yi​=yi−1​+61​(k1​+2k2​+2k3​+k4​).
     f. Update ti=ti−1+hti​=ti−1​+h.
-    Return the arrays {ti}{ti​} and {yi}{yi​} representing the time and the corresponding values of the dependent variable.</p>
+    Return the arrays {ti}{ti​} and {yi}{yi​} representing the time and the corresponding values of the dependent variable.
+</p>
 
